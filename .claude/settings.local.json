@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(php artisan tinker --execute=\"echo implode\\(\"\"\\\\n\"\", array_map\\(fn\\($t\\) => $t->Tables_in_bus_ticket_booking, DB::select\\(''SHOW TABLES''\\)\\)\\)\")",
+      "Bash(php artisan tinker --execute=\"DB::statement\\(''RENAME TABLE password_resets TO password_reset_tokens''\\);\")",
+      "Bash(php -r \":*)",
+      "Bash(php artisan config:clear)",
+      "Bash(php artisan tinker --execute=\":*)"
+    ]
+  }
+}
